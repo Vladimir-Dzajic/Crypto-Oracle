@@ -12,7 +12,6 @@ body {
 h3 {
     font-family: 'Old Standard TT', serif;
     font-size: 30px;
-    display: flex;
     justify-content: center;
     background: -webkit-linear-gradient(#d4883d, #5f3819);
     -webkit-background-clip: text;
@@ -28,7 +27,7 @@ h3 {
     background: #ffffff;
     border: 1px solid #f0f2f4;
     display: flex;
-    justify-content: left; 
+    justify-content: space-evenly; 
     align-items: center;
     margin-bottom: 20px;
 }
@@ -45,10 +44,8 @@ h3 {
     padding-left: 15px;
 }
 #message {
-    display: flex;
     font-weight: bold;
     color: #d4883a;
-    padding-left: 435px;
 }
 
 #message:hover {
@@ -56,6 +53,10 @@ h3 {
     color: #784820;
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+}
 
 #content {
     display: flex;
