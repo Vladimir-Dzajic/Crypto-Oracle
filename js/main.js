@@ -38,6 +38,7 @@ function displayCryptoAssets(respObj) {
 		var marketCap = document.createElement("td")
 		marketCap.innerHTML = ('$' + Number.parseFloat(cryptoArr[i].marketCapUsd / 1000000000).toFixed(2) + 'b');
 		
+		
 		// ========= Supply ===========
 		var supply = document.createElement("td")
 		supply.innerHTML = ('$' + Number.parseFloat(cryptoArr[i].supply / 1000000).toFixed(2)  + 'm');
@@ -91,7 +92,7 @@ function init() {
 	loadCryptoAssets();
 
 	// refresh every 5 seconds
-	setInterval(loadCryptoAssets, 5000);
+	setInterval(loadCryptoAssets, 3000);
 }
 
 window.addEventListener('load', init);
