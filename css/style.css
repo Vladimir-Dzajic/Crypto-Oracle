@@ -30,6 +30,8 @@ h3 {
     justify-content: space-evenly; 
     align-items: center;
     margin-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #header li {
@@ -61,12 +63,13 @@ h3 {
 #content {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
     width: 60%;
-    margin: auto;
+    margin: 30px auto;
     background-color: #ffffff;
     filter: drop-shadow(0 0 0.75rem #cecccc);
     border-radius: 5px;
+    margin-top: 3;
+
 }
 
 #bitcoin {
@@ -82,14 +85,8 @@ table > tbody td {
     border-bottom: 1px solid #f0f2f4;
 }
 
-table > thead {
-    background-color: #fafafa;
-    border-bottom: 1px solid #f0f2f4;
-    padding: 30px;
 
-}
-
-table tr {
+table > tbody tr {
     text-align: right;
 }
 
@@ -102,12 +99,22 @@ table > tbody img {
     margin-right: 5px;
     vertical-align: middle;
 }
+
+
+table > thead > tr th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
 .center {
     text-align: center;
 }
 
 .left {
     text-align: left;
+
+
 }
 
 .red-text {

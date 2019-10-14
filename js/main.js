@@ -36,11 +36,11 @@ function displayCryptoAssets(respObj) {
 		
 		// ========= Market Cap ===========
 		var marketCap = document.createElement("td")
-		marketCap.innerHTML = Number.parseFloat(cryptoArr[i].marketCapUsd).toFixed(2);
+		marketCap.innerHTML = ('$' + Number.parseFloat(cryptoArr[i].marketCapUsd / 1000000000).toFixed(2) + 'b');
 		
 		// ========= Supply ===========
 		var supply = document.createElement("td")
-		supply.innerHTML = Number.parseFloat(cryptoArr[i].supply).toFixed(2);
+		supply.innerHTML = ('$' + Number.parseFloat(cryptoArr[i].supply / 1000000).toFixed(2)  + 'm');
 
 		// ========= Change percentage ===========
 		var change = document.createElement("td")
